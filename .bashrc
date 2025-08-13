@@ -112,6 +112,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+. ~/.bash_functions
+
 if [ -d "$HOME/bin" ] ;
 then
   PATH="$HOME/bin:$PATH"
