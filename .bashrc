@@ -116,3 +116,8 @@ if [ -d "$HOME/bin" ] ;
 then
   PATH="$HOME/bin:$PATH"
 fi
+
+if [ -f "$HOME/.config/bash/$(uname --nodename)" ] ;
+then
+  . $HOME/.config/bash/$(uname --nodename)
+fi
